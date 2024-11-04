@@ -10,4 +10,13 @@ export default defineConfig({
 			// Использую абсолютный путь или путь относительно корня проекта
 		},
 	},
+	server: {
+		proxy: {
+			'/api': {
+				target: 'http://95.85.127.34',
+				changeOrigin: true,
+				rewrite: path => path.replace(/^\/api/, ''),
+			},
+		},
+	},
 })

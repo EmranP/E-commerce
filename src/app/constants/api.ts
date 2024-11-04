@@ -1,4 +1,4 @@
-export const BASE_URL_API: string = `https://95.85.127.34/api/docs/`
+export const BASE_URL_API: string = `http://95.85.127.34/api/`
 
 // !ANALYTICS
 export const API_URL_ANALYTICS: string = `analytics`
