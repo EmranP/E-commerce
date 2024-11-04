@@ -48,6 +48,13 @@ interface Product {
 	shop?: ProductShop // информация о магазине, связанная с продуктом (необязательное поле)
 }
 
+// Ответ для Get запроса api/product/
+export interface GetAllProducts {
+	message: string
+	count: number
+	products: Product[]
+}
+
 // Ответ для GET запроса api/product/${id}
 export interface GetProductByIdResponse {
 	message: string // сообщение о статусе операции
