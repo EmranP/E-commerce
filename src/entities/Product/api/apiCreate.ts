@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { API_URL_PRODUCT, BASE_URL_API } from '../../../app/constants/api'
-import { CreateProductRequest } from '../../types/api/product/apiPost'
+import { CreateProductRequest } from '../types/apiPost'
 
 export const apiCreateProduct = async (
 	productData: CreateProductRequest
